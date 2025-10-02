@@ -1,0 +1,14 @@
+# Archivos generados automáticamente
+config.json
+productos.json
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Entornos virtuales
+venv/
+.env
+
+# Archivos de sistema
+.DS_Store
