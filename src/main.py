@@ -1,9 +1,9 @@
 from tkinter import Tk, Label, Button, Entry, StringVar, Toplevel, Text, END, messagebox, simpledialog, Scrollbar, VERTICAL, RIGHT, Y
 from datetime import datetime
-from config_manager import load_config, save_config
-from products_manager import load_products, save_products
-from notifier import send_message
-from tracker import check_price
+from src.config_manager import load_config, save_config
+from src.products_manager import load_products, save_products
+from src.notifier import send_message
+from src.tracker import check_price
 
 # ----------------- Funciones -----------------
 

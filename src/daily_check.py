@@ -1,7 +1,7 @@
-from config_manager import load_config
-from products_manager import load_products, save_products
-from tracker import check_price
-from notifier import send_message
+from src.config_manager import load_config
+from src.products_manager import load_products, save_products
+from src.tracker import check_price
+from src.notifier import send_message
 from datetime import datetime
 
 def main():
