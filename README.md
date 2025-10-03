@@ -2,18 +2,28 @@
 
 Este proyecto permite rastrear y registrar los precios de productos de manera automática, almacenando los resultados y notificando cambios relevantes.
 
-## Estructura del proyecto
-- `main.py`: Script principal para ejecutar el rastreador.
-- `tracker.py`: Lógica de rastreo de precios.
-- `products_manager.py`: Gestión de productos a rastrear.
-- `notifier.py`: Notificaciones de cambios de precio.
-- `config_manager.py`: Manejo de configuración.
-- `database.py`: Gestión de almacenamiento de datos.
-- `config.json`: Archivo de configuración general (incluye token y chat_id para notificaciones por Telegram).
-- `productos.json`: Lista de productos a rastrear y su historial de precios.
-- `requirements.txt`: Dependencias del proyecto.
-- `main.spec`: Configuración para generar el ejecutable con PyInstaller.
-- `dist/main.exe`: Ejecutable generado para Windows.
+## Estructura del proyecto (Árbol)
+
+```
+PrecioRastreo/
+├── build/
+│   └── main/
+├── dist/
+│   ├── config.json
+│   ├── main.exe
+│   └── productos.json
+├── requirements.txt
+├── src/
+│   ├── config_manager.py
+│   ├── daily_check.py
+│   ├── database.py
+│   ├── main.py
+│   ├── main.spec
+│   ├── notifier.py
+│   ├── products_manager.py
+│   └── tracker.py
+├── README.md
+```
 
 ## Requisitos
 - Python 3.10 o superior
@@ -28,7 +38,7 @@ pip install -r requirements.txt
 ### Ejecución manual (Python)
 
 ```powershell
-python main.py
+python src\main.py
 ```
 
 ### Ejecución como ejecutable (Windows)
@@ -42,7 +52,7 @@ dist\main.exe
 Puedes programar la ejecución diaria usando el programador de tareas de Windows. Por ejemplo, crea una tarea que ejecute:
 
 ```powershell
-python daily_check.py
+python src\daily_check.py
 ```
 
 o bien el ejecutable:
